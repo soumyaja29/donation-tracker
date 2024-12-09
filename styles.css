@@ -1,0 +1,98 @@
+/* styles.css */
+
+/* General Reset */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    color: #004d6d;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bb5;
+}
+
+header p {
+    font-size: 1rem;
+    color: #005b80;
+}
+
+.info {
+    margin: 20px 0;
+}
+
+.info p {
+    background: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #004d6d;
+}
+
+.actions button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+    background: linear-gradient(90deg, #007bb5, #004d6d);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.actions button:hover {
+    background: linear-gradient(90deg, #004d6d, #007bb5);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #005b80;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .actions button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}

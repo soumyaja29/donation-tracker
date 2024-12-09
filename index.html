@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Donation Tracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script> <!-- Web3.js -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blockchain Donation Tracker</h1>
+            <p>Track and manage donations transparently on the blockchain.</p>
+        </header>
+        <main>
+            <div class="info">
+                <p><strong>Total Donations:</strong> <span id="totalDonations">0</span> ETH</p>
+                <p><strong>Contract Balance:</strong> <span id="contractBalance">0</span> ETH</p>
+                <p><strong>Your Donations:</strong> <span id="yourDonations">0</span> ETH</p>
+            </div>
+            <div class="actions">
+                <button id="donateButton">Donate 0.01 ETH</button>
+                <button id="withdrawButton">Withdraw Funds (Owner Only)</button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Powered by Blockchain Technology</p>
+    </footer>
+    <script src="script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>
